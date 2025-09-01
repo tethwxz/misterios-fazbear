@@ -101,6 +101,17 @@ h2 {
   border: none;
   color: var(--primary-color);
 }
+/* SOLUÇÃO PARA NAVBAR COBRINDO O CONTEÚDO */
+
+html {
+    /* Garante que a rolagem para seções da página não esconda o título */
+    scroll-padding-top: 80px; 
+}
+
+body {
+    /* Adiciona um espaço no topo da página para o conteúdo não ficar escondido */
+    padding-top: 80px;
+}
 
 /* ==============================
    BANNER
@@ -425,4 +436,5 @@ footer {
   position: sticky;
   top: 85px; /* 65px da navbar + 20px de espaço */
   height: 600px;
+
 }
